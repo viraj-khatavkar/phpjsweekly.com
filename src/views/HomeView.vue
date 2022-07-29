@@ -3,11 +3,8 @@ import TheSubscribeForm from '../components/TheSubscribeForm.vue';
 </script>
 
 <template>
-    <div class="sm:max-w-sm md:max-w-md lg:max-w-lg max-w-xs mx-auto mt-10">
-        <h1 class="font-bold text-3xl">
-            phpjsweekly.com
-        </h1>
-        <p class="mt-10 text-xl">
+    <div>
+        <p class="text-xl">
             The 5-min weekly newsletter for PHP & JS developers.
         </p>
         <p class="mt-4 text-lg">
@@ -17,12 +14,20 @@ import TheSubscribeForm from '../components/TheSubscribeForm.vue';
             <TheSubscribeForm />
         </div>
 
-        <p class="text-sm mt-8 text-gray-600 my-4">
-            Published by
-            <a href="https://twitter.com/virajhimself" target="_blank" class="hover:underline">
-                Viraj Khatavkar
-            </a>
-        </p>
+        <div class="flex flex-col items-center">
+            <div class="mt-4 text-lg">
+                <RouterLink to="/archives" class="hover:underline text-blue-700">
+                    Check our archives for a sample.
+                </RouterLink>
+            </div>
+
+            <p class="text-sm mt-8 text-gray-600 my-4">
+                Published by
+                <a href="https://twitter.com/virajhimself" target="_blank" class="underline">
+                    Viraj Khatavkar
+                </a>
+            </p>
+        </div>
     </div>
 </template>
 
